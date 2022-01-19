@@ -35,7 +35,7 @@ jobs:
 
     - name: Build CLI and LibHB
       run: |
-        export PATH="/home/runner/work/HandBrake/HandBrake/toolchains/llvm-mingw-msvcrt/bin:${PATH}"
+        export PATH="/home/runner/work/HandBrake-w81/HandBrake-w81/toolchains/llvm-mingw-msvcrt/bin:${PATH}"
         export PATH=/usr/bin:$PATH
         ./configure --cross=aarch64-w64-mingw32 --enable-mf --launch-jobs=0 --launch
         cd build
